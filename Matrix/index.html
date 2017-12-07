@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<title>Matrix RPG</title>
+
+	<!-- Link to reset.css -->
+	<link rel="stylesheet" type="text/css" href="assets/reset.css">
+	
+	<!-- Bootstrap --> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Fonts -->
+	 <link href="http://allfont.net/allfont.css?fonts=miltown" rel="stylesheet" type="text/css">
+	 <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+
+	<!-- style.css -->
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- game.js -->
+	<script src="assets/game.js"></script>
+
+</head>
+
+<body>
+
+	<header>ENTER THE MATRIX</header>
+
+	<div class="container player-character">
+		<div class="row">
+			<div class="col-md-12">
+				<h2 id="choose-character">CHOOSE YOUR CHARACTER</h2>
+			</div>
+		</div>
+
+		<!-- Neo -->
+		<div class="row">
+			<div class="col-md-3" id="neo">
+				<button class="character" value="neo" id="resetNeo">
+					<div class="row text-center character">NEO</div>
+					<img class="row text-center" src="assets/images/Neo.png" height="150px" width="150px">
+					<div class="row text-center hp" id="neo-hp">---</div>
+				</button>
+			</div>
+			<!-- Smith -->
+			<div class="col-md-3" id="smith">
+				<button class="character" value="smith" id="resetSmith">
+					<div class="row text-center character">AGENT SMITH</div>
+					<img class="row text-center" src="assets/images/Smith.png" height="150px" width="150px">
+					<div class="row text-center hp" id="smith-hp">---</div>
+				</button>
+			</div>
+			<!-- Morpheus -->
+			<div class="col-md-3" id="morpheus">
+				<button class="character" value="morpheus" id="resetMorpheus">
+					<div class="row text-center character">MORPHEUS</div>
+					<img class="row text-center" src="assets/images/Morpheus.png" height="150px" width="150px">
+					<div class="row text-center hp" id="morpheus-hp">---</div>
+				</button>
+			</div>
+			<!-- Trinity -->
+			<div class="col-md-3" id="trinity">
+				<button class="character" value="trinity" id="resetTrinity">
+					<div class="row text-center character">TRINITY</div>
+					<img class="row text-center" src="assets/images/Trinity.png" height="150px" width="150px">
+					<div class="row text-center hp" id="trinity-hp">---</div>
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- Non player character sent here -->
+	<div class="container defenders">
+		<div class="row">
+			<div class="col-md-12">
+				<h2>DEFENDERS</h2>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-4 defender1">
+			</div>
+			<div class="col-md-4 defender2">
+			</div>
+			<div class="col-md-4 defender3">
+			</div>
+		</div>
+	</div>
+
+	<!-- Enemy sent here -->
+	<div class="container enemy-character">
+		<div class="row">
+			<div class="col-md-12">
+				<h2 id="choose-enemy">CHOOSE YOUR ENEMY</h2>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12" id="enemy">
+			</div>
+		</div>
+
+		<br><br>
+
+		<div class="row">
+			<div class="col-md-6">
+				<button type="button" class="btn btn-danger" id="attack">ATTACK!</button>
+			</div>
+			<div class="col-md-6">
+				<button type="button" class="btn btn-danger" id="reset">RESTART</button>
+			</div>
+		</div>
+
+		<br><br>
+
+		<div class="row">
+			<div id="attack-stats">...</div>
+		</div>
+	</div>
+
+</body>
+
+</html>

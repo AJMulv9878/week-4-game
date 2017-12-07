@@ -1,0 +1,40 @@
+html {
+	background-image: url(images/matrix.jpg);
+}
+
+body, div {
+	background-color: rgba(0, 0, 0, 0);
+	color: #02E148;
+	font-family: 'Bungee', cursive;
+}
+
+header {
+	text-align: center;
+	font-size: 36px;
+	font-family: 'Miltown', arial;
+}
+
+.character {
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+}
+
+.btn-danger {
+	background-color: #02E148;
+	border-color: #02E148;
+	font-family: 'Miltown', arial;
+}
+
+.hp {
+	color: white;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 25px;
+}
+
+#attack-stats {
+	font-size: 15px;
+	font-family: 'Bungee', cursive;
+}
